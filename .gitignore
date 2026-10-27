@@ -1,0 +1,24 @@
+*.iml
+.gradle
+.kotlin
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Nunca al repositorio: claves de firma y datos extraídos del dispositivo
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+*.db
+*.db-wal
+*.db-shm
+local.db*
+*.apk
+*.aab
