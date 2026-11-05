@@ -1,6 +1,6 @@
 # Inventario de datos sensibles
 
-Estado al terminar la P2.2. Las tres primeras columnas son lo que hemos comprobado mirando logcat, leyendo los ficheros con `run-as` y sacando la base de datos del móvil. La última se rellena en el Bloque III.
+Estado al terminar el bloque 2 (P2.2 y P2.3). Las tres primeras columnas son lo que hemos comprobado mirando logcat, leyendo los ficheros con `run-as` y sacando la base de datos del móvil. La última se rellena en el Bloque III.
 
 `<app>` es `/data/data/es.uma.seguridad.appbase/`.
 
@@ -17,9 +17,9 @@ Estado al terminar la P2.2. Las tres primeras columnas son lo que hemos comproba
 
 ## Datos que vendrán con la app
 
-Cuando hagamos lo de la P2.3 habrá que añadir:
+La app ya pide el permiso de ubicación, pero todavía no la guarda ni la envía. Cuando lo haga, y con el resto de funciones, habrá que añadir:
 
-- La ubicación al fichar.
+- La ubicación de cada fichaje.
 - Los avisos al jefe cuando alguien llega tarde.
 - Los descuentos y penalizaciones.
 - Cuándo se enciende o se usa el móvil, si al final lo hacemos.
