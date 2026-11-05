@@ -8,7 +8,7 @@ Ahora mismo la app es insegura a propósito: guarda el token en claro, saca dato
 
 - Grupo: I
 - Nombre del equipo: Sesayou
-- Miembros: (completar)
+- Miembros: Pablo Delgado (SilverDelgado), Jorge Serrano Jiménez (Jorgeeex), Sergio Raul Ruiz Solier (Seryera), Álvaro Pastor García (Alvaroopg) y Dmytro Morgun (D1M1S4N)
 - Dominio asignado: fichaje laboral con ubicación
 
 ## Qué hace
@@ -21,10 +21,10 @@ El dato más sensible es la ubicación del empleado junto con su identidad y su 
 
 | Requisito | Cómo lo cumplimos | Estado | Responsable |
 |---|---|---|---|
-| Autenticación | Login con usuario y contraseña contra `/api/login`, que devuelve un token | Hecho, sin proteger | (completar) |
-| Almacenamiento local de datos sensibles | Token en SharedPreferences y fichajes en una base de datos Room | Hecho, sin cifrar | (completar) |
-| Llamada a una API remota | Retrofit contra el backend de la asignatura (`/api/login`, `/api/elementos`, `/api/perfil`) | Hecho, por HTTP | (completar) |
-| Permiso peligroso | Ubicación, para saber desde dónde se ficha. Se pide al pulsar «Conceder ubicación» y la app sigue funcionando si se deniega | Hecho | (completar) |
+| Autenticación | Login con usuario y contraseña contra `/api/login`, que devuelve un token | Hecho, sin proteger | Jorge Serrano Jiménez |
+| Almacenamiento local de datos sensibles | Token en SharedPreferences y fichajes en una base de datos Room | Hecho, sin cifrar | Sergio Raul Ruiz Solier (base de datos) y Dmytro Morgun (token de sesión) |
+| Llamada a una API remota | Retrofit contra el backend de la asignatura (`/api/login`, `/api/elementos`, `/api/perfil`) | Hecho, por HTTP | Álvaro Pastor García |
+| Permiso peligroso | Ubicación, para saber desde dónde se ficha. Se pide al pulsar «Conceder ubicación» y la app sigue funcionando si se deniega | Hecho | Pablo Delgado |
 
 Qué datos sensibles hay y dónde están: [INVENTARIO.md](INVENTARIO.md). La memoria del bloque 2, con la superficie expuesta y el modelo de amenazas: [MEMORIA.md](MEMORIA.md).
 

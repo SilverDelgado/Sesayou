@@ -2,7 +2,7 @@
 
 Seguridad en Entornos Móviles, grupo I.
 
-- Miembros: (completar)
+- Miembros: Pablo Delgado (SilverDelgado), Jorge Serrano Jiménez (Jorgeeex), Sergio Raul Ruiz Solier (Seryera), Álvaro Pastor García (Alvaroopg) y Dmytro Morgun (D1M1S4N)
 - Repositorio: https://github.com/SilverDelgado/Sesayou (etiqueta `bloque2`)
 
 ## Trabajo hecho en el bloque 2
@@ -56,7 +56,7 @@ El detalle completo está en [INVENTARIO.md](INVENTARIO.md). Resumen:
 
 | Requisito | Responsable | Estado |
 |---|---|---|
-| Autenticación de usuario | (completar) | Hecho, sin proteger |
-| Almacenamiento local de datos sensibles | (completar) | Hecho, sin cifrar |
-| Llamada a una API remota | (completar) | Hecho, por HTTP |
-| Permiso peligroso (ubicación) | (completar) | Hecho, se pide en el momento de usarlo |
+| Autenticación de usuario | Jorge Serrano Jiménez | Hecho, sin proteger |
+| Almacenamiento local de datos sensibles | Sergio Raul Ruiz Solier (base de datos) y Dmytro Morgun (token de sesión) | Hecho, sin cifrar |
+| Llamada a una API remota | Álvaro Pastor García | Hecho, por HTTP |
+| Permiso peligroso (ubicación) | Pablo Delgado | Hecho, se pide en el momento de usarlo |
