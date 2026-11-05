@@ -2,8 +2,6 @@
 
 App Android de fichaje laboral, en plan parodia, para Seguridad en Entornos Móviles (UMA).
 
-Ahora mismo la app es insegura a propósito: guarda el token en claro, saca datos sensibles por logcat y usa HTTP. Se arregla en el Bloque III. No uséis credenciales reales.
-
 ## Equipo
 
 - Grupo: I
