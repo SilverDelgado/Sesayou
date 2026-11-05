@@ -147,6 +147,19 @@ class Repositorio(
         }
     }
 
+    suspend fun obtenerFichaje(id: Int): EstadoUi<Fichaje> =
+        withContext(Dispatchers.IO) {
+            val token = sesion.obtenerToken()
+                ?: return@withContext EstadoUi.Error(MotivoError.SesionCaducada)
+            try {
+                EstadoUi.Exito(api.fichaje("Bearer $token", id))
+            } catch (e: IOException) {
+                EstadoUi.Error(MotivoError.SinConexion)
+            } catch (e: Exception) {
+                EstadoUi.Error(MotivoError.Desconocido)
+            }
+        }
+
     /**
      * Cierra la sesión.
      *

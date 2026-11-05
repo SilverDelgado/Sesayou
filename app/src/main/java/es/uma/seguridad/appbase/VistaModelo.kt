@@ -28,6 +28,9 @@ class VistaModelo(private val repositorio: Repositorio) : ViewModel() {
     private val _estadoLista = MutableStateFlow<EstadoUi<List<Fichaje>>>(EstadoUi.Reposo)
     val estadoLista: StateFlow<EstadoUi<List<Fichaje>>> = _estadoLista.asStateFlow()
 
+    private val _estadoDetalle = MutableStateFlow<EstadoUi<Fichaje>>(EstadoUi.Reposo)
+    val estadoDetalle: StateFlow<EstadoUi<Fichaje>> = _estadoDetalle.asStateFlow()
+
     fun entrar(usuario: String, clave: String) {
         viewModelScope.launch {
             _estadoLogin.value = EstadoUi.Cargando
@@ -39,6 +42,13 @@ class VistaModelo(private val repositorio: Repositorio) : ViewModel() {
         viewModelScope.launch {
             _estadoLista.value = EstadoUi.Cargando
             _estadoLista.value = repositorio.obtenerFichajes()
+        }
+    }
+
+    fun cargarDetalle(id: Int) {
+        viewModelScope.launch {
+            _estadoDetalle.value = EstadoUi.Cargando
+            _estadoDetalle.value = repositorio.obtenerFichaje(id)
         }
     }
 
@@ -58,6 +68,7 @@ class VistaModelo(private val repositorio: Repositorio) : ViewModel() {
             repositorio.cerrarSesion()
             _estadoLogin.value = EstadoUi.Reposo
             _estadoLista.value = EstadoUi.Reposo
+            _estadoDetalle.value = EstadoUi.Reposo
         }
     }
 }
